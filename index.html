@@ -3,218 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendario de Contenido - Aprobación</title>
-    <style>
-        /* Estilos Base Estéticos y Limpios */
-        :root {
-            --bg-color: #f4f6f9;
-            --card-bg: #ffffff;
-            --text-color: #2d3748;
-            --primary-color: #4a5568;
-            --accent-color: #25d366; /* Verde WhatsApp */
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 20px 0;
-            border-bottom: 2px solid #e2e8f0;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-            color: var(--primary-color);
-        }
-
-        header p {
-            margin: 5px 0 0 0;
-            color: #718096;
-        }
-
-        /* Rejilla para los 4 Posts */
-        .grid-posts {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        @media (min-width: 768px) {
-            .grid-posts {
-                grid-template-columns: 1fr 1fr; /* 2 columnas en pantallas grandes */
-            }
-        }
-
-        /* Tarjeta de cada Post */
-        .post-card {
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .post-header {
-            background-color: #edf2f7;
-            padding: 10px 15px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            color: #4a5568;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .post-media {
-            background-color: #f7fafc;
-            text-align: center;
-            padding: 10px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .post-media img {
-            max-width: 100%;
-            height: auto;
-            max-height: 400px;
-            border-radius: 8px;
-            object-fit: contain;
-        }
-
-        .post-content {
-            padding: 20px;
-            flex-grow: 1;
-        }
-
-        .post-text {
-            white-space: pre-line; /* Respeta los saltos de línea del copy */
-            margin-bottom: 15px;
-            font-size: 0.95rem;
-        }
-
-        .post-hashtags {
-            color: #3182ce;
-            font-size: 0.9rem;
-        }
-
-        /* Sección de Aprobación Final */
-        .approval-section {
-            background-color: var(--card-bg);
-            padding: 30px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            margin-top: 40px;
-        }
-
-        .whatsapp-btn {
-            display: inline-flex;
-            align-items: center;
-            background-color: var(--accent-color);
-            color: white;
-            text-decoration: none;
-            padding: 15px 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
-            transition: transform 0.2s, background-color 0.2s;
-        }
-
-        .whatsapp-btn:hover {
-            transform: translateY(-2px);
-            background-color: #20ba56;
-        }
-    </style>
+    <title>Visualizador de Calendarios de Contenido</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div class="container">
         
-        <header>
-            <!-- REEMPLAZA EL NOMBRE DEL CLIENTE AQUÍ -->
-            <h1>Calendario de Contenido: Lavinia</h1>
-            <p>Propuesta de publicaciones para la semana</p>
+        <!-- Encabezado dinámico -->
+        <header class="calendar-header">
+            <h1 id="mainTitle">Cargando Título...</h1>
+            <h2 id="mainSubtitle">Cargando Subtítulo...</h2>
+            <p class="week-dates" id="weekDates">Cargando Fechas...</p>
         </header>
 
-        <div class="grid-posts">
+        <div class="carousel-container">
+            
+            <!-- Flechas principales para cambiar de Publicación -->
+            <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
 
-            <!-- POST 1 -->
-            <article class="post-card">
-                <div class="post-header">Publicación 1 - Lunes</div>
-                <div class="post-media">
-                    <!-- Coloca aquí el link de tu imagen (De Canva o tu carpeta) -->
-                    <img src="https://via.placeholder.com/500x500?text=Dise%C3%B1o+1" alt="Diseño 1">
-                </div>
-                <div class="post-content">
-                    <p class="post-text">Aquí va el texto llamativo que redactó tu compañera para el primer post de la semana. Puedes poner emojis y saltos de línea perfectamente.</p>
-                    <p class="post-hashtags">#Marketing #Diseño #Lavinia</p>
-                </div>
-            </article>
+            <!-- Aquí se inyectarán los posts dinámicamente desde el JS -->
+            <div class="slides-wrapper" id="slidesWrapper"></div>
 
-            <!-- POST 2 -->
-            <article class="post-card">
-                <div class="post-header">Publicación 2 - Miércoles</div>
-                <div class="post-media">
-                    <img src="https://via.placeholder.com/500x500?text=Dise%C3%B1o+2" alt="Diseño 2">
-                </div>
-                <div class="post-content">
-                    <p class="post-text">Este es el espacio para el copy de la segunda publicación. Recuerda afinar el texto aquí directamente en el HTML el viernes.</p>
-                    <p class="post-hashtags">#Emprendedores #Creatividad</p>
-                </div>
-            </article>
-
-            <!-- POST 3 -->
-            <article class="post-card">
-                <div class="post-header">Publicación 3 - Viernes</div>
-                <div class="post-media">
-                    <img src="https://via.placeholder.com/500x500?text=Dise%C3%B1o+3" alt="Diseño 3">
-                </div>
-                <div class="post-content">
-                    <p class="post-text">Texto para la tercera entrega de la semana. Todo ordenado y muy visual para que el cliente no se confunda.</p>
-                    <p class="post-hashtags">#SocialMedia #Tips</p>
-                </div>
-            </article>
-
-            <!-- POST 4 -->
-            <article class="post-card">
-                <div class="post-header">Publicación 4 - Sábado</div>
-                <div class="post-media">
-                    <img src="https://via.placeholder.com/500x500?text=Dise%C3%B1o+4" alt="Diseño 4">
-                </div>
-                <div class="post-content">
-                    <p class="post-text">Último post de la semana. El cliente puede revisar todo deslizando hacia abajo cómodamente desde su teléfono.</p>
-                    <p class="post-hashtags">#FinDeSemana #Comunidad</p>
-                </div>
-            </article>
+            <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
 
         </div>
 
-        <!-- SECCIÓN DE APROBACIÓN -->
-        <section class="approval-section">
-            <h2>¿Todo está correcto?</h2>
-            <p>Si estás de acuerdo con los textos y diseños, haz clic abajo para enviarme la aprobación por WhatsApp.</p>
-            
-            <!-- REEMPLAZA EL TELÉFONO (Con código de país, ej: 51999888777) Y EL MENSAJE -->
-            <a href="https://wa.me/51999888777?text=%C2%A1Hola%21+El+calendario+de+esta+semana+para+Lavinia+est%C3%A1+aprobado.+%C2%A1Puedes+programarlo%21" target="_blank" class="whatsapp-btn">
-                <span>🟢 Aprobar y Notificar por WhatsApp</span>
-            </a>
-        </section>
-
     </div>
 
+    <!-- Enlace al archivo de configuración semanal -->
+    <script src="js/config.js"></script>
 </body>
 </html>
