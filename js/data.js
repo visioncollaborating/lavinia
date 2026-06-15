@@ -3,96 +3,79 @@
    ========================================================================== */
 const CONFIG_SEMANAL = {
     titulo: "Calendario Junio 2026",
-    cliente: "Ruby Sanchez",
+    cliente: "Lavinia Flores",
     rangoFechas: "✨ Semana del martes 16 al sábado 20 de junio ✨",
-    usuarioInstagram: "rubysanchez.propiedades",
-    avatarLetras: "RS",
+    usuarioInstagram: "lflores.bienesraices",
+    avatarLetras: "LF",
 
     publicaciones: [
         {
             tipo: "imagen",
             diaSemana: "Martes 16 de Junio",
-            copy: `🤖 Comprar casa ya no es como antes. Si sigues visitando propiedades a ciegas, estás perdiendo tiempo.
+            copy: `🧠 Tomar una buena decisión inmobiliaria comienza aquí
 
-Hoy la tecnología te permite:
-📲 Recorridos virtuales: Visita opciones en minutos.
-🏢 Preventas: Visualiza tu hogar antes de construirse.
-📊 Datos reales: Información precisa del mercado.
-⚡ Procesos exprés: Trámites más rápidos y eficientes.
+El mercado cambia constantemente. Más que vender propiedades, mi objetivo es darte información útil, tendencias y oportunidades reales para ayudarte a decidir mejor.
 
-La tecnología no reemplaza la asesoría de un experto, pero sí te ayuda a decidir con total seguridad. 💡
+📲 Sígueme para mantenerte actualizado y dime en los comentarios: ¿Qué tema te gustaría que explique en mi próximo post?
 .
 .
-Contáctame y disfruta de tu nueva casa 🙌
-📞 Ruby Sánchez: 999.970.167`,
+Lavinia Flores | MVCS PN-7714
+WhatsApp: https://wa.me/51997937414`,
             imagenes: ["img/16.jpg"] 
         },
         {
-            tipo: "imagen",
+            tipo: "carrusel",
             diaSemana: "Jueves 18 de Junio",
-            copy: `¡Oficialmente vendido!
+            copy: `📍 Flat exclusivo en Surco: Solo 14 departamentos
 
-Firmamos un hermoso dúplex en Surco en un gran trabajo en equipo con @jose.agentebr. 🤝✨
-¡Muchas felicidades a los nuevos propietarios en su hogar! 🎉
+Vive en una zona tranquila, conectada y cerca de todo lo que necesitas (colegios, centros comerciales y restaurantes).
 
-¿Quieres vender tu inmueble? ¡Contáctanos! ☎️
+3 dormitorios + Terraza
+
+Área: 115.22 m²
+
+1 estacionamiento incluido
+
+💬 ¿Quieres conocer el precio o agendar una visita? Escríbeme al privado.
 .
 .
-Contáctame y disfruta de tu nueva casa 🙌
-📞 Ruby Sánchez: 999.970.167`,
-            imagenes: ["img/18.jpg"]
+Lavinia Flores | MVCS PN-7714
+WhatsApp: https://wa.me/51997937414`,
+            imagenes: ["img/18.jpg","img/18_2.jpg","img/18_3.jpg","img/18_4.jpg","img/18_5.jpg"]
         },
         {
-            tipo: "video",
+            tipo: "imagen",
             diaSemana: "Viernes 19 de Junio",
-            copy: `¡EN ALQUILER! 🌟 DEPA EN SURCO
-📍 Av. Tomás Marsano | Cerca de todo
+            copy: `💥 ¿Tu sueldo alcanza para un minidepartamento?
 
-💰 Precio: USD 725 (Amoblado o sin amoblar)
-📐 Área: 150 m² (Súper amplio y luminoso)
+Los precios subieron por las nuevas exigencias de tamaño. Hoy necesitas planificar mejor para calificar a una compra.
 
-Características:
-🛏️ 2 Hab | 🚿 1 Baño | 🪣 Lavandería + patio
+Antes de buscar, evalúa: tu capacidad de endeudamiento, tu cuota mensual ideal y las opciones de financiamiento actuales.
 
-Condiciones:
-🔹 2x1 (2 garantía + 1 adelanto)
-🔹 Mantenimiento: S/ 120 (Incluye agua) | Arbitrios: S/ 50
-⚠️ No mascotas / Luz con contómetro.
-
-🔥 ¡Agenda tu visita al DM antes que se alquile!
+💬 ¿Cuál es tu mayor reto financiero para comprar este año? Te leo abajo.
 .
 .
-Contáctame y disfruta de tu nueva casa 🙌
-📞 Ruby Sánchez: 999.970.167`,
+Lavinia Flores | MVCS PN-7714
+WhatsApp: https://wa.me/51997937414`,
             imagenes: [
                 "img/19.jpg"
             ]
         },
         {
-            tipo: "carrusel",
+            tipo: "video",
             diaSemana: "Sábado 20 de Junio",
-            copy: `¡EN ALQUILER! 🌟 DEPA TOP EN SURCO
-📍 Ubicación: Av. Caminos del Inca (Frente al Centro Empresarial / Cerca a Wong)
+            copy: `🛑 El impuesto que pagas podría subir del 5% al 29.5%
 
-💰 Precio: USD 1,200
-📐 Área: 95 m² | Piso 3 (Vista externa con ventanas antiruido 🤫)
+Si vendes varias propiedades en el mismo año, la SUNAT te considerará "habitual". Esto cambia tu impuesto de ganancia de capital y eleva la tasa drásticamente. Si inviertes en bienes raíces, tienes que cuidar esta regla.
 
-Lo más importante:
-🛏️ 2 Hab con clóset | 🚿 1 Baño | 🚗 1 Cochera + Depósito
-🧑‍🍳 Cocina cerrada con gas natural + Área de servicio completa
-🏢 Edificio: Seguridad 24/7 y Rooftop con zona de parrilla
+💬 ¿Conocías la regla de habitualidad de la SUNAT? Déjame tus dudas aquí abajo.
 
-Condiciones:
-🔹 Contrato 1 año (2 de garantía + 1 de adelanto)
-🔹 Mantenimiento: S/ 350 aprox. (Incluye agua)
-⚠️ Sustento de ingresos e Infocorp impecable / No mascotas.
-
-🔥 ¡Ubicación estratégica! Escríbenos al DM para visitarlo ya.
+FUENTE: Sociedad Peruana de Bienes Raíces
 .
 .
-Contáctame y disfruta de tu nueva casa 🙌
-📞 Ruby Sánchez: 999.970.167`,
-            imagenes: ["img/20.jpg","img/20_2.jpg","img/20_3.jpg","img/20_4.jpg","img/20_5.jpg"]
+Lavinia Flores | MVCS PN-7714
+WhatsApp: https://wa.me/51997937414`,
+            imagenes: ["img/20.jpg"]
         }
     ]
 };
