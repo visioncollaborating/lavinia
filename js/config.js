@@ -1,107 +1,3 @@
-/* ==========================================================================
-   CONFIGURACIÓN SEMANAL DEL CALENDARIO
-   Modifica solo los valores entre comillas invertidas ( ` ) de este bloque cada viernes.
-   ========================================================================== */
-
-const CONFIG_SEMANAL = {
-    // 1. TITULARES PRINCIPALES DE LA PÁGINA
-    titulo: "Calendario Junio 2026",
-    cliente: "Lavinia Flores",
-    rangoFechas: "✨ Semana del lunes 8 al sábado 13 de junio ✨",
-    
-    // 2. CONFIGURACIÓN DE INSTAGRAM MOCKUP
-    usuarioInstagram: "lflores.bienesraices",
-    avatarLetras: "LF", // Iniciales que salen en el círculo del perfil
-
-    // 3. CONTENIDO DE LAS PUBLICACIONES (4 Posts de la semana)
-    publicaciones: [
-        {
-            tipo: "imagen", // Opciones disponibles: "imagen", "video", "carrusel"
-            diaSemana: "Martes 9 de Junio",
-            // Corregido con comillas invertidas para soportar párrafos y links largos
-            copy: `📈 ¿Comprar propiedades en año electoral? Por qué deberías hacerlo:
-
-Mientras la mayoría espera, los inversionistas inteligentes aprovechan para negociar mejores precios.
-
-📉 Menos competencia: Menos compradores buscando las mismas propiedades.
-💵 Poder de negociación: Propietarios más abiertos a escuchar ofertas.
-🚀 Mayor plusvalía: Compras barato hoy y ganas cuando el mercado se estabilice.
-
-La incertidumbre de otros es tu oportunidad de negocio.
-.
-.
-Lavinia Flores | MVCS PN-7714
-WhatsApp: https://wa.me/51997937414`,
-            imagenes: ["img/9.jpg"] 
-        },
-        {
-            tipo: "video", // Al poner "video" el sistema le añade la etiqueta de REEL en la esquina
-            diaSemana: "Jueves 11 de Junio",
-            copy: `🏢 KENKO II – Surco: Tu próximo departamento con terraza y zona BBQ
-
-Vive en una zona residencial top, cerca de colegios, centros comerciales y avenidas principales.
-
-🥩 Área social: Departamentos con balcón, terraza y parrilla propia.
-🍳 Diseño moderno: Cocina abierta integrada y cuarto de lavado independiente.
-🔑 Exclusividad: Edificio funcional con dos ingresos independientes y ascensores de alta tecnología.
-
-Diseñado para disfrutar en familia sin salir de casa.
-.
-.
-Lavinia Flores | MVCS PN-7714
-WhatsApp: https://wa.me/51997937414`,
-            imagenes: ["img/11.jpg"]
-        },
-        {
-            tipo: "carrusel", // Al poner "carrusel" el sistema activa los puntitos interactivos de Instagram
-            diaSemana: "Viernes 12 de Junio",
-            copy: `🚧 Ahorra comprando en planos
-
-Es la mejor forma de ganar plusvalía desde el primer día, pero antes de firmar revisa estos 3 puntos clave:
-
-🏢 Trayectoria: Que la constructora tenga proyectos ya entregados.
-🏦 Respaldo: Elige proyectos financiados por un banco o con fideicomiso.
-🗓️ Tiempos: Asegura la fecha de entrega con penalizaciones por retraso.
-
-Una buena maqueta vende, pero los papeles te dan la tranquilidad real.
-.
-.
-Lavinia Flores | MVCS PN-7714
-WhatsApp: https://wa.me/51997937414`,
-            // Lista tus 5 imágenes del carrusel aquí separadas por comas:
-            imagenes: [
-                "img/12.jpg",
-                "img/12_2.jpg",
-                "img/12_3.jpg",
-                "img/12_4.jpg",
-                "img/12_5.jpg"
-            ]
-        },
-        {
-            tipo: "video",
-            diaSemana: "Sábado 13 de Junio",
-            copy: `🏢 ¿Por qué todo el mundo busca departamentos Flat en Lima?
-
-Vivir en un solo nivel es la opción más práctica y con mayor valor de reventa en el mercado.
-
-👶 Seguridad y comodidad: Cero escaleras. Ideal para niños, mascotas y adultos mayores.
-🧹 Espacio eficiente: Más fácil de limpiar, amoblar y mantener en el día a día.
-💸 Inversión segura: Son los que más rápido se alquilan y venden en distritos top.
-
-Menos divisiones y ambientes mucho mejor aprovechados.
-.
-.
-Lavinia Flores | MVCS PN-7714
-WhatsApp: https://wa.me/51997937414`,
-            imagenes: ["img/13.jpg"]
-        }
-    ]
-};
-
-/* ==========================================================================
-   LÓGICA DEL MOTOR DEL SISTEMA (No tocar a menos que quieras remaquetar)
-   ========================================================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
     // Inyectar textos del encabezado
     document.getElementById("mainTitle").innerText = CONFIG_SEMANAL.titulo;
@@ -116,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const slide = document.createElement("div");
         slide.className = `slide ${index === 0 ? 'active' : ''}`;
 
-        // Determinar estructura multimedia
         let mediaHTML = "";
         let legendClass = "";
 
@@ -134,7 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
             
             mediaHTML = `
                 <div class="ig-media-carousel">
-                    <div class="inner-carousel-track" id="carouselTrack">
+                    <div class="ig-carousel-icon">📋 CARRUSEL</div>
+                    <div class="inner-carousel-track">
                         ${imagesHTML}
                     </div>
                     <div class="carousel-dots">
@@ -142,14 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </div>`;
         } else {
-            // Imagen estándar
             mediaHTML = `
                 <div class="ig-media">
                     <img src="${post.imagenes[0]}" alt="Imagen ${index + 1}">
                 </div>`;
         }
 
-        // Armar el esqueleto completo del post
         slide.innerHTML = `
             <div class="instagram-mockup">
                 <div class="ig-header">
@@ -204,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     wrapper.appendChild(approvalSlide);
 
-    // INICIALIZAR EVENTOS DE NAVEGACIÓN (Control del Carrusel Principal)
+    // INICIALIZAR EVENTOS DE NAVEGACIÓN
     const slides = document.querySelectorAll(".slide");
     const prevBtn = document.getElementById("prevBtn");
     const nextBtn = document.getElementById("nextBtn");
@@ -229,7 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
     tracks.forEach(track => {
         const dots = track.parentElement.querySelectorAll(".dot");
         
-        // 1. Detectar el movimiento cuando arrastran la foto
         track.addEventListener("scroll", () => {
             const width = track.clientWidth;
             const activeIndex = Math.round(track.scrollLeft / width);
@@ -239,14 +132,12 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-        // 2. NUEVO: Detectar el clic en cada puntito para mover la foto
         dots.forEach((dot, index) => {
             dot.addEventListener("click", () => {
                 const width = track.clientWidth;
-                // Mueve el scroll horizontal de la foto hacia la posición del puntito
                 track.scrollTo({
                     left: width * index,
-                    behavior: "smooth" // Movimiento suave de lado a lado
+                    behavior: "smooth"
                 });
             });
         });
