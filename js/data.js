@@ -4,78 +4,80 @@
 const CONFIG_SEMANAL = {
     titulo: "Calendario Junio 2026",
     cliente: "Lavinia Flores",
-    rangoFechas: "✨ Semana del martes 16 al sábado 20 de junio ✨",
+    rangoFechas: "✨ Semana del martes 23 al sábado 27 de junio ✨",
     usuarioInstagram: "lflores.bienesraices",
     avatarLetras: "LF",
 
     publicaciones: [
         {
             tipo: "imagen",
-            diaSemana: "Martes 16 de Junio",
-            copy: `🧠 Tomar una buena decisión inmobiliaria comienza aquí
+            diaSemana: "Martes 23 de Junio",
+            copy: `El error que cometen el 90% de los propietarios al alquilar su inmueble 📄⚖️
 
-El mercado cambia constantemente. Más que vender propiedades, mi objetivo es darte información útil, tendencias y oportunidades reales para ayudarte a decidir mejor.
+Un mal contrato puede hacer que desalojar a un inquilino moroso te tome años de juicio. Para blindar tu inversión, es obligatorio incluir la cláusula de allanamiento futuro y el desalojo con intervención notarial (Ley 30933).
 
-📲 Sígueme para mantenerte actualizado y dime en los comentarios: ¿Qué tema te gustaría que explique en mi próximo post?
+Esto te permite recuperar tu propiedad vía notaría en semanas, saltándote procesos judiciales eternos y complicados. No arriesgues tu patrimonio por un papel simple.
+
+¿Qué opinas de este filtro de seguridad? Te leo abajo. 👇
 .
 .
 Lavinia Flores | MVCS PN-7714
 WhatsApp: https://wa.me/51997937414`,
-            imagenes: ["img/16.jpg"] 
+            imagenes: ["img/23.jpg"] 
         },
         {
-            tipo: "carrusel",
-            diaSemana: "Jueves 18 de Junio",
-            copy: `📍 Flat exclusivo en Surco: Solo 14 departamentos
+            tipo: "video",
+            diaSemana: "Jueves 25 de Junio",
+            copy: `Kenko II es un edificio exclusivo en zona residencial top, cerca de colegios y centros comerciales, diseñado para el estilo de vida actual:
 
-Vive en una zona tranquila, conectada y cerca de todo lo que necesitas (colegios, centros comerciales y restaurantes).
+🏠 Tu propia zona BBQ: Departamentos con balcón y parrilla privada.
+🍳 Diseño funcional: Cocina abierta integrada y lavandería independiente.
+🔑 Privacidad total: Solo dos ingresos independientes y ascensores de alta tecnología.
 
-3 dormitorios + Terraza
-
-Área: 115.22 m²
-
-1 estacionamiento incluido
-
-💬 ¿Quieres conocer el precio o agendar una visita? Escríbeme al privado.
+¿Qué espacio es el más importante para tu familia? Te leo abajo. 👇
 .
 .
 Lavinia Flores | MVCS PN-7714
 WhatsApp: https://wa.me/51997937414`,
-            imagenes: ["img/18.jpg","img/18_2.jpg","img/18_3.jpg","img/18_4.jpg","img/18_5.jpg"]
+            imagenes: ["img/25.jpg"]
         },
         {
             tipo: "imagen",
-            diaSemana: "Viernes 19 de Junio",
-            copy: `💥 ¿Tu sueldo alcanza para un minidepartamento?
+            diaSemana: "Viernes 26 de Junio",
+            copy: `🏠 El edificio donde vives podría estar devaluando tu departamento 🏢📉
 
-Los precios subieron por las nuevas exigencias de tamaño. Hoy necesitas planificar mejor para calificar a una compra.
+Aunque tu inmueble esté impecable, una mala administración del condominio o el descuido de las áreas comunes destruyen su valor de mercado de inmediato. Los compradores miran todo el entorno antes de ofertar.
 
-Antes de buscar, evalúa: tu capacidad de endeudamiento, tu cuota mensual ideal y las opciones de financiamiento actuales.
+Asegúrate de que la junta de propietarios mantenga el edificio al día antes de fijar tu precio de salida.
 
-💬 ¿Cuál es tu mayor reto financiero para comprar este año? Te leo abajo.
+¿Qué opinas? Te leo en los comentarios. 👇
 .
 .
 Lavinia Flores | MVCS PN-7714
 WhatsApp: https://wa.me/51997937414`,
             imagenes: [
-                "img/19.jpg"
+                "img/26.jpg"
             ]
         },
         {
             tipo: "video",
-            diaSemana: "Sábado 20 de Junio",
-            copy: `🛑 El impuesto que pagas podría subir del 5% al 29.5%
+            diaSemana: "Sábado 27 de Junio",
+            copy: `¿Por qué los departamentos en Lima van a subir de precio pronto? 📊🏗️
 
-Si vendes varias propiedades en el mismo año, la SUNAT te considerará "habitual". Esto cambia tu impuesto de ganancia de capital y eleva la tasa drásticamente. Si inviertes en bienes raíces, tienes que cuidar esta regla.
+Mientras la compra de viviendas sigue creciendo, CAPECO advirtió una caída del 16.5% en el lanzamiento de nuevos proyectos inmobiliarios en Lima.
 
-💬 ¿Conocías la regla de habitualidad de la SUNAT? Déjame tus dudas aquí abajo.
+✅ El dato: Al haber menos opciones disponibles para la gran cantidad de compradores, el déficit de oferta ya es una realidad en el mercado.
 
-FUENTE: Sociedad Peruana de Bienes Raíces
+✅ La consecuencia: Los expertos señalan que el valor del metro cuadrado comenzará a subir con fuerza en los próximos meses debido a la escasez.
+
+Si ya tienes tu cuota inicial lista, esperar más tiempo para decidirte podría costarte bastante caro. ¡El momento de congelar tu precio es ahora! 🏠🔑
+
+(Fuente: CAPECO, junio 2026)
 .
 .
 Lavinia Flores | MVCS PN-7714
 WhatsApp: https://wa.me/51997937414`,
-            imagenes: ["img/20.jpg"]
+            imagenes: ["img/27.jpg"]
         }
     ]
 };
