@@ -4,80 +4,79 @@
 const CONFIG_SEMANAL = {
     titulo: "Calendario Junio 2026",
     cliente: "Lavinia Flores",
-    rangoFechas: "✨ Semana del martes 23 al sábado 27 de junio ✨",
+    rangoFechas: "✨ Semana del martes 30 de junio al sábado 04 de julio ✨",
     usuarioInstagram: "lflores.bienesraices",
     avatarLetras: "LF",
 
     publicaciones: [
         {
             tipo: "imagen",
-            diaSemana: "Martes 23 de Junio",
-            copy: `El error que cometen el 90% de los propietarios al alquilar su inmueble 📄⚖️
+            diaSemana: "Martes 30 de Junio",
+            copy: `🏠 ¿El momento de invertir? Es HOY.
+🚀 El mercado inmobiliario está encendido: mayor dinamismo, precios estables y nuevas oportunidades apareciendo cada día.
 
-Un mal contrato puede hacer que desalojar a un inquilino moroso te tome años de juicio. Para blindar tu inversión, es obligatorio incluir la cláusula de allanamiento futuro y el desalojo con intervención notarial (Ley 30933).
+💡 ¿Por qué ahora? La propiedad sigue siendo el activo más seguro para blindar tu capital. Las mejores piezas se cierran cuando otros recién están empezando a mirar.
 
-Esto te permite recuperar tu propiedad vía notaría en semanas, saltándote procesos judiciales eternos y complicados. No arriesgues tu patrimonio por un papel simple.
+La pregunta no es si el mercado se mueve; es si estás listo para aprovecharlo.
 
-¿Qué opinas de este filtro de seguridad? Te leo abajo. 👇
+👇 Si buscas resultados distintos, el momento de tomar acción es ahora.
 .
 .
 Lavinia Flores | MVCS PN-7714
 WhatsApp: https://wa.me/51997937414`,
-            imagenes: ["img/23.jpg"] 
+            imagenes: ["img/30.jpg"] 
         },
         {
             tipo: "video",
-            diaSemana: "Jueves 25 de Junio",
-            copy: `Kenko II es un edificio exclusivo en zona residencial top, cerca de colegios y centros comerciales, diseñado para el estilo de vida actual:
+            diaSemana: "Jueves 02 de Julio",
+            copy: `📍 Departamento en Alquiler: Límite San Isidro y Aramburú 🔑
+Vive en calle Las Garzas Sur, en una ubicación privilegiada. Este departamento destaca por su increíble iluminación natural, balcón y vista exterior. 🏢
 
-🏠 Tu propia zona BBQ: Departamentos con balcón y parrilla privada.
-🍳 Diseño funcional: Cocina abierta integrada y lavandería independiente.
-🔑 Privacidad total: Solo dos ingresos independientes y ascensores de alta tecnología.
+El espacio perfecto:
 
-¿Qué espacio es el más importante para tu familia? Te leo abajo. 👇
+2 dormitorios y 2 baños completos. 🛏️
+Excelente distribución y luz natural. ✨
+
+¿Buscas vivir cerca de todo? ⚡
+
+👇 Escríbeme al privado para más detalles y agendar una visita.
 .
 .
 Lavinia Flores | MVCS PN-7714
 WhatsApp: https://wa.me/51997937414`,
-            imagenes: ["img/25.jpg"]
+            imagenes: ["img/2.jpg"]
         },
         {
             tipo: "imagen",
-            diaSemana: "Viernes 26 de Junio",
-            copy: `🏠 El edificio donde vives podría estar devaluando tu departamento 🏢📉
+            diaSemana: "Viernes 03 de Julio",
+            copy: `⚠️ No caigas en la trampa del crédito hipotecario 💸
+Que el banco te apruebe un monto alto no significa que debas usarlo todo. Muchos cometen el error de sobreendeudarse, comprometiendo su paz mental por un inmueble que no necesitan o que será difícil de revender después. 📉
 
-Aunque tu inmueble esté impecable, una mala administración del condominio o el descuido de las áreas comunes destruyen su valor de mercado de inmediato. Los compradores miran todo el entorno antes de ofertar.
+El crédito es una herramienta, no una extensión de tu sueldo. 💳 Antes de firmar, asegúrate de que la cuota sea cómoda y que tu inversión sea realmente líquida. ¡Cuida tus finanzas antes de comprar! 🛡️
 
-Asegúrate de que la junta de propietarios mantenga el edificio al día antes de fijar tu precio de salida.
-
-¿Qué opinas? Te leo en los comentarios. 👇
+Fuente: Sociedad Peruana de Bienes Raíces.
 .
 .
 Lavinia Flores | MVCS PN-7714
 WhatsApp: https://wa.me/51997937414`,
             imagenes: [
-                "img/26.jpg"
+                "img/3.jpg"
             ]
         },
         {
             tipo: "video",
-            diaSemana: "Sábado 27 de Junio",
-            copy: `¿Por qué los departamentos en Lima van a subir de precio pronto? 📊🏗️
+            diaSemana: "Sábado 04 de Julio",
+            copy: `📍 Flat exclusivo en Surco: Solo 14 departamentos 🏢
+Vive con la tranquilidad y conexión que buscas. Este flat de 115.22 m² cuenta con 3 dormitorios, una terraza perfecta para tus reuniones y estacionamiento incluido. ✨
 
-Mientras la compra de viviendas sigue creciendo, CAPECO advirtió una caída del 16.5% en el lanzamiento de nuevos proyectos inmobiliarios en Lima.
+Tu nuevo hogar te espera en la mejor zona residencial. 🔑
 
-✅ El dato: Al haber menos opciones disponibles para la gran cantidad de compradores, el déficit de oferta ya es una realidad en el mercado.
-
-✅ La consecuencia: Los expertos señalan que el valor del metro cuadrado comenzará a subir con fuerza en los próximos meses debido a la escasez.
-
-Si ya tienes tu cuota inicial lista, esperar más tiempo para decidirte podría costarte bastante caro. ¡El momento de congelar tu precio es ahora! 🏠🔑
-
-(Fuente: CAPECO, junio 2026)
+💬 ¿Quieres conocer el precio o agendar una visita? Envíame un mensaje directo.
 .
 .
 Lavinia Flores | MVCS PN-7714
 WhatsApp: https://wa.me/51997937414`,
-            imagenes: ["img/27.jpg"]
+            imagenes: ["img/4.jpg"]
         }
     ]
 };
